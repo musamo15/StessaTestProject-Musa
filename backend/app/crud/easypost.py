@@ -12,7 +12,7 @@ async def create_address(newAddress):
 
     try:
         address = easypost.Address.create(
-            verify=['delivery', 'zip4', 'true'],
+            verify=['true'],
             **newAddress.dict()
         )
         return address.id
