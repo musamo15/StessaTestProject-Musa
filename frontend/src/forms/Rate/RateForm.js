@@ -66,10 +66,6 @@ class RateForm extends Component {
                             rates: shipmentResponse.rates,
                             selectedCarrier: [...shipmentCarriers][0],
                         })
-
-                    if(shipmentResponse.rates.length <= 0) {
-                        showError = true
-                    }
                 }
                 else {
                     showError = true
@@ -78,7 +74,7 @@ class RateForm extends Component {
                 showError = true
 
             }
-            this.setErrorVisbility(showError, 'Unable to create shipment, please enter a valid shipment')
+            this.setErrorVisbility(showError, 'Unable to create shipment')
         }
     }
 

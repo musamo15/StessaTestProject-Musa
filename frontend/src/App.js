@@ -13,7 +13,6 @@ export default class App extends Component {
       <BrowserRouter history={history}>
         <Routes>
           <Route path='/' element={<HomePage/>}/>
-          <Route path='/create-label' element={<HomePage/>}/>
           <Route path='*' element={<ErrorPage/>}/>
         </Routes>
       </BrowserRouter>
